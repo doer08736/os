@@ -34,14 +34,14 @@ void main(){
 		}
 	}
 	for(i=0; i<n; ++i){
-		twait = twait + wt[i];
-		tturn = tturn + turn[i];
+		twait += wt[i];
+		tturn += turn[i];
 	}
 	await = twait/n;
 	aturn = tturn/n;
 	printf("pno\tbtime\tatime\twtime\tttime");
 	for(i=0; i<n; i++)
-		printf("\n%d\t%d\t%d\t%d\t%d\n" ,c[i], burst[i], p[i], wt[i], turn[i]);
+		printf("\n%d\t%d\t%d\t%d\t%d\n" , c[i], burst[i], p[i], wt[i], turn[i]);
 	printf("The average waiting time is: %f\n", await);
 	printf("The average turn around time is: %f\n", aturn);
 }

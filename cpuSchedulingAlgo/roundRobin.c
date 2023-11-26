@@ -17,8 +17,6 @@ int main(){
 	initialize();
 	calculate();
 	display_waittime();
-	//getch();
-	//return 0;
 }
 
 void input(){
